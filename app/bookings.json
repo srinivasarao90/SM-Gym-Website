@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "phone": "1234567890",
+    "category": "Self-Trained",
+    "booking_date": "2025-01-16"
+  },
+  {
+    "name": "Jane Smith",
+    "phone": "9876543210",
+    "category": "Training with Gym Trainer",
+    "booking_date": "2025-01-17"
+  },
+  {
+    "name": "Mike Brown",
+    "phone": "4567891230",
+    "category": "Gym Trainer with Food and Drinks",
+    "booking_date": "2025-01-18"
+  }
+]

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+ 
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <h1>SM Gym </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#explore-features">Features</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Entry Page -->
+  <section id="entry" class="section">
+    <div class="content">
+      <h1>Welcome to SM Gym </h1>
+      <p>Your personal fitness companion powered by artificial intelligence.</p>
+      <div class="entry-buttons">
+        <button onclick="location.href='#home'">Get Started</button>
+        <button onclick="location.href='#diet-plan'">Diet Plan</button>
+        <button onclick="location.href='#workout-plans'">Workout Plans</button>
+      </div>
+    </div>
+  </section>
+ 
+ <!-- Hero Section -->
+ <section id="home" class="section">
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <div class="carousel-images">
+      <div class="carousel-slide active">
+        <img src="{{ url_for('static', filename='assets/victor-freitas-WvDYdXDzkhs-unsplash.jpg') }}" alt="Slide 1">
+        <div class="overlay-text">
+          <h2>Revolutionize Your Workout with AI</h2>
+          <button onclick="location.href='#explore-features'">Explore Features</button>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='assets/fitnish-media-5zrPlR-5lP0-unsplash.jpg') }}" alt="Slide 2">
+        <div class="overlay-text">
+          <h2>Join the future of fitness with Gym AI</h2>
+          <button onclick="location.href='#diet-plan'">Diet Plan</button>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="{{ url_for('static', filename='assets/samuel-girven-fqMu99l8sqo-unsplash.jpg')}}" alt="Slide 3">
+        <div class="overlay-text">
+          <h2>Your Personal Fitness Journey Awaits</h2>
+          <button onclick="location.href='#workout-plans'">Workout Plans</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Navigation Buttons -->
+    <div class="carousel-buttons">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Explore Features Section -->
+<section id="explore-features" class="section">
+  <div class="content">
+    <h2>Explore Features</h2>
+  </div>
+    <div class="features-container">
+     <!-- Feature 1 -->
+<div class="feature-item">
+  <div class="feature-image">
+    <img src="{{ url_for('static', filename='assets/StrengthTraining.jpeg') }}" alt="AI-Powered Workouts">
+  </div>
+  <div class="feature-text">
+    <h3>AI-Powered Workouts</h3>
+    <p>Get personalized workout plans designed by AI to fit your fitness goals.</p>
+  </div>
+</div>
+      <!-- Feature 2 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/progress.webp')}}" alt="Progress Tracking">
+        </div>
+        <div class="feature-text">
+          <h3>Progress Tracking</h3>
+          <p>Track your progress with detailed statistics and analytics.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/resl_time_feedback.png')}}" alt="Real-Time Feedback">
+        </div>
+        <div class="feature-text">
+          <h3>Real-Time Feedback</h3>
+          <p>Get instant feedback during your workout sessions to improve performance.</p>
+        </div>
+      </div>
+      <!-- Feature 4 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/live.jpg')}}" alt="Live Coaching">
+        </div>
+        <div class="feature-text">
+          <h3>Live Coaching</h3>
+          <p>Access professional trainers for live sessions to guide you.</p>
+        </div>
+      </div>
+      <!-- Feature 5 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/werable.jpg')}}" alt="Wearable Integration">
+        </div>
+        <div class="feature-text">
+          <h3>Wearable Integration</h3>
+          <p>Sync with fitness trackers for seamless tracking of your workouts and progress.</p>
+        </div>
+      </div>
+      <!-- Feature 6 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/recovery.jpg')}}" alt="Recovery Insights">
+        </div>
+        <div class="feature-text">
+          <h3>Recovery Insights</h3>
+          <p>Learn about recovery techniques to enhance your performance and prevent injury.</p>
+        </div>
+      </div>
+      <!-- Feature 7 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/custom.jpg')}}" alt="Custom Meal Plans">
+        </div>
+        <div class="feature-text">
+          <h3>Custom Meal Plans</h3>
+          <p>Create personalized meal plans for your specific fitness and health goals.</p>
+        </div>
+      </div>
+      <!-- Feature 8 -->
+      <div class="feature-item">
+        <div class="feature-image">
+          <img src="{{ url_for('static', filename='assets/Community.jpg')}}" alt="Fitness Community">
+        </div>
+        <div class="feature-text">
+          <h3>Fitness Community</h3>
+          <p>Join a community of like-minded individuals to stay motivated and reach your goals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- <section id="diet-plan" class="section">
+    <div class="content">
+      <h2>Your Personalized Diet Plan</h2>
+      <p>Get a custom diet plan designed to fit your fitness goals.</p>
+      <p>Here, we will show information about your diet plan...</p>
+    </div>
+  </section> -->
+
+  <section id="diet-plan" class="section">
+    <div class="content">
+      <h2>Your Personalized Diet Plan</h2>
+      <p>Get a custom diet plan designed to fit your fitness goals.</p>
+      <p>Follow the step-by-step guide below for a balanced and nutritious diet that complements your workout routine.</p>
+      
+      <!-- Step-by-step Diet Plan -->
+      <div class="diet-steps">
+        <div class="diet-step">
+          <h3>Step 1: Morning Breakfast</h3>
+          <p>Start your day with a healthy breakfast to fuel your body for the day ahead.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/morning.jpg')}}" alt="Healthy Breakfast">
+            <div class="diet-info">
+              <ul>
+                <li>Oatmeal with fruits</li>
+                <li>Boiled eggs</li>
+                <li>Green tea or black coffee</li>
+              </ul>
+              <p>Tip: Avoid sugary cereals and opt for whole grains for more energy.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="diet-step">
+          <h3>Step 2: Mid-Morning Snack</h3>
+          <p>Keep your metabolism active with a light snack.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/morning2.jpg')}}" alt="Healthy Snack">
+            <div class="diet-info">
+              <ul>
+                <li>Mixed nuts (almonds, walnuts)</li>
+                <li>Greek yogurt with honey</li>
+              </ul>
+              <p>Tip: Choose unsweetened yogurt for fewer added sugars.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="diet-step">
+          <h3>Step 3: Lunch</h3>
+          <p>Lunch should provide a balance of protein, healthy fats, and vegetables.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/lunch.jpg')}}" alt="Healthy Lunch">
+            <div class="diet-info">
+              <ul>
+                <li>Grilled chicken or tofu</li>
+                <li>Quinoa or brown rice</li>
+                <li>Steamed vegetables (broccoli, spinach)</li>
+              </ul>
+              <p>Tip: Add a variety of colorful vegetables for maximum nutrients.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="diet-step">
+          <h3>Step 4: Afternoon Snack</h3>
+          <p>Have a small snack to keep you full until dinner.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/lunch_senak.jpeg')}}" alt="Afternoon Snack">
+            <div class="diet-info">
+              <ul>
+                <li>Fruit (apple or banana)</li>
+                <li>Low-fat cheese or hummus</li>
+              </ul>
+              <p>Tip: Choose snacks that combine fiber and protein for longer-lasting energy.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="diet-step">
+          <h3>Step 5: Dinner</h3>
+          <p>Keep dinner light, but nutrient-dense.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/Dinner.jpg')}}" alt="Healthy Dinner">
+            <div class="diet-info">
+              <ul>
+                <li>Salmon or lean beef</li>
+                <li>Sweet potatoes</li>
+                <li>Green salad with olive oil dressing</li>
+              </ul>
+              <p>Tip: Avoid large servings of carbs at night to improve digestion.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="diet-step">
+          <h3>Step 6: Evening Snack (Optional)</h3>
+          <p>If you're hungry before bed, choose a light and healthy snack.</p>
+          <div class="diet-image-text">
+            <img src="{{ url_for('static', filename='assets/optional.jpg')}}" alt="Evening Snack">
+            <div class="diet-info">
+              <ul>
+                <li>Herbal tea</li>
+                <li>Dark chocolate (70% cacao or higher)</li>
+              </ul>
+              <p>Tip: Choose a snack that won't disrupt your sleep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Workout Plans Section -->
+<!-- Workout Plans Section -->
+<section id="workout-plans" class="section">
+  <div class="content">
+    <!-- Section Header -->
+    <h2>Your Personalized Workout Plans</h2>
+    <p>Choose from a variety of workout plans tailored to your fitness goals.</p>
+
+    <!-- Step-by-Step Guide -->
+    <div class="workout-steps">
+      <div class="step">
+        <h3>Step 1: Define Your Goal</h3>
+        <p>Understand your fitness goals: weight loss, muscle gain, or overall fitness. This helps select the right plan.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Choose Your Workout Type</h3>
+        <p>Pick your focus: Strength Training, Cardio, HIIT, or Flexibility routines.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Start with Beginner Workouts</h3>
+        <p>Begin with basic exercises and gradually increase intensity.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Incorporate Progress Tracking</h3>
+        <p>Track reps, sets, and weights, and adjust difficulty as you improve.</p>
+      </div>
+    </div>
+
+    <!-- Workout Categories -->
+    <div class="workout-categories">
+      <h3>Popular Workout Categories</h3>
+      <div class="category">
+        <img src="{{ url_for('static', filename='assets/strength.jpg')}}" alt="Strength Training">
+        <div class="category-content">
+          <h4>Strength Training</h4>
+          <p>Build muscle and strength with weightlifting, bodyweight, and resistance exercises.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src="{{ url_for('static', filename='assets/cardio.jpg')}}" alt="Cardio Workouts">
+        <div class="category-content">
+          <h4>Cardio</h4>
+          <p>Improve heart health with running, cycling, or swimming.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src="{{ url_for('static', filename='assets/flex.jpg')}}" alt="Flexibility Workouts">
+        <div class="category-content">
+          <h4>Flexibility</h4>
+          <p>Enhance range of motion with yoga and Pilates.</p>
+        </div>
+      </div>
+      <div class="category">
+        <img src="{{ url_for('static', filename='assets/Hiit1.jpeg')}}" alt="HIIT Workouts">
+        <div class="category-content">
+          <h4>HIIT</h4>
+          <p>Burn fat and build endurance with high-intensity interval training.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example Workout Routine -->
+    <div class="example-routine">
+      <h3>Example Workout Routine</h3>
+      <p>Here’s a sample routine to get started. Adjust based on your fitness level:</p>
+      <ul>
+        <li>Push-ups: 3 sets of 15 reps</li>
+        <li>Squats: 3 sets of 20 reps</li>
+        <li>Plank: Hold for 1 minute</li>
+        <li>Burpees: 3 sets of 10 reps</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- FAQs Section -->
+<section id="faqs" class="section">
+  <div class="content">
+    <!-- Section Header -->
+    <h2>Frequently Asked Questions</h2>
+    <p>Find answers to common questions about our workout and diet plans.</p>
+
+    <!-- FAQ Items -->
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">1. How do I choose the right workout plan? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+          <p>Start by identifying your fitness goals—whether it's weight loss, muscle gain, or general fitness. Based on that, select the workout category that aligns with your goal.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. How often should I work out? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+          <p>Beginners can aim for 3-4 days per week. Gradually increase frequency and intensity as your stamina improves.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">3. What diet should I follow along with workouts? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+          <p>Focus on balanced nutrition with adequate protein, healthy fats, and carbs. Match your meals to your workout goals.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">4. Can I do workouts at home without equipment? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+          <p>Yes! Bodyweight exercises like push-ups, squats, and planks are great for building strength without equipment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">5. How long will it take to see results? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+          <p>Results depend on consistency and effort. On average, noticeable changes appear after 4-6 weeks of regular workouts and a proper diet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you! Reach out through any of the following methods:</p>
+
+  <div class="contact-container">
+
+    <!-- Contact Details -->
+    <div class="contact-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/126/126341.png" alt="Phone Icon">
+      <h3>Phone</h3>
+      <p>+91 63032 27018</p>
+    </div>
+
+    <div class="contact-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+      <h3>Email</h3>
+      <p><a href="mailto:srinurabbanaboina90@gmail.com">srinu90@gmail.com</a></p>
+    </div>
+
+    <div class="contact-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">
+      <h3>Instagram</h3>
+      <p><a href="https://www.instagram.com/srinurabbanaboina/" target="_blank">srinurabbanaboina</a></p>
+    </div>
+
+    <div class="contact-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon">
+      <h3>Location</h3>
+      <p><a href="https://www.google.com/maps/place/%E0%B0%9A%E0%B0%BF%E0%B0%B2%E0%B0%95%E0%B0%B2%E0%B1%81%E0%B0%B0%E0%B0%BF%E0%B0%AA%E0%B1%87%E0%B0%9F,+%E0%B0%86%E0%B0%82%E0%B0%A7%E0%B1%8D%E0%B0%B0+%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%A6%E0%B1%87%E0%B0%B6%E0%B1%8D+522616/@16.094051,80.1522244,15z/data=!3m1!4b1!4m6!3m5!1s0x3a4a636b1370eb19:0x83f184f547f89e53!8m2!3d16.0948008!4d80.1656205!16zL20vMGYwcGNm?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">SM GYM</a></p>
+      <p>Bangalore, Karnataka, India</p>
+    </div>
+
+  </div>
+</section>
+<!-- booking-section Details -->
+
+<div class="booking-section">
+  <h2>Book Your Gym Plan</h2>
+  <form id="bookingForm" action="/book" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="category">Choose a Plan:</label>
+    <select id="category" name="category" required>
+      <option value="" disabled selected>Select a category</option>
+      <option value="Self-Trained">Self-Trained</option>
+      <option value="Training with Gym Trainer">Training with Gym Trainer</option>
+      <option value="Gym Trainer with Food & Drinks">Gym Trainer with Food & Drinks</option>
+    </select>
+
+    <button type="submit">Book Now</button>
+  </form>
+</div>
+
+
+
+  <!-- Login Section -->
+  <section id="login">
+    <div class="content">
+      <h3>Login</h3>
+    </div>
+    <script src="Login_page.js"></script>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
